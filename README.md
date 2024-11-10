@@ -110,6 +110,17 @@ Training was conducted using Detectron2's flexible configuration settings, allow
    - **`instances_test_seg_images`**: Binary masks for each class, enabling detailed analysis and flexible use in downstream research or visualization tasks.
 
 ## Technology Stack
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Detectron2](https://img.shields.io/badge/Detectron2-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![CUDA](https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-003B57?style=for-the-badge&logo=matplotlib&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-4A92A0?style=for-the-badge&logo=seaborn&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 The project leverages a diverse set of tools, frameworks, and libraries that contribute to its robustness, precision, and ease of deployment. Each component was chosen based on its performance, compatibility, and relevance to segmentation tasks in computer vision and biomedical imaging.
 
