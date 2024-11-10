@@ -1,6 +1,36 @@
 # Detectron2-based Segmentation of Cells, Mitochondria, Canalicular Vessels, and Alpha Granules
 
-![Detectron2](https://img.shields.io/badge/Framework-Detectron2-blue) ![Python](https://img.shields.io/badge/Python-3.8%2B-yellow) ![Computer Vision](https://img.shields.io/badge/Domain-Computer%20Vision-red) ![Deep Learning](https://img.shields.io/badge/Approach-Deep%20Learning-green) ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+<!-- Repository Overview Badges -->
+<div align="center">
+    <img src="https://img.shields.io/github/stars/arpsn123/GranuleGuardians?style=for-the-badge&logo=github&logoColor=white&color=ffca28" alt="GitHub Repo Stars">
+    <img src="https://img.shields.io/github/forks/arpsn123/GranuleGuardians?style=for-the-badge&logo=github&logoColor=white&color=00aaff" alt="GitHub Forks">
+    <img src="https://img.shields.io/github/watchers/arpsn123/GranuleGuardians?style=for-the-badge&logo=github&logoColor=white&color=00e676" alt="GitHub Watchers">
+</div>
+
+<!-- Issue & Pull Request Badges -->
+<div align="center">
+    <img src="https://img.shields.io/github/issues/arpsn123/GranuleGuardians?style=for-the-badge&logo=github&logoColor=white&color=ea4335" alt="GitHub Issues">
+    <img src="https://img.shields.io/github/issues-pr/arpsn123/GranuleGuardians?style=for-the-badge&logo=github&logoColor=white&color=ff9100" alt="GitHub Pull Requests">
+</div>
+
+<!-- Repository Activity & Stats Badges -->
+<div align="center">
+    <img src="https://img.shields.io/github/last-commit/arpsn123/GranuleGuardians?style=for-the-badge&logo=github&logoColor=white&color=673ab7" alt="GitHub Last Commit">
+    <img src="https://img.shields.io/github/contributors/arpsn123/GranuleGuardians?style=for-the-badge&logo=github&logoColor=white&color=388e3c" alt="GitHub Contributors">
+    <img src="https://img.shields.io/github/repo-size/arpsn123/GranuleGuardians?style=for-the-badge&logo=github&logoColor=white&color=303f9f" alt="GitHub Repo Size">
+</div>
+
+<!-- Language & Code Style Badges -->
+<div align="center">
+    <img src="https://img.shields.io/github/languages/count/arpsn123/GranuleGuardians?style=for-the-badge&logo=github&logoColor=white&color=607d8b" alt="GitHub Language Count">
+    <img src="https://img.shields.io/github/languages/top/arpsn123/GranuleGuardians?style=for-the-badge&logo=github&logoColor=white&color=4caf50" alt="GitHub Top Language">
+</div>
+
+<!-- Maintenance Status Badge -->
+<div align="center">
+    <img src="https://img.shields.io/badge/Maintenance-%20Active-brightgreen?style=for-the-badge&logo=github&logoColor=white" alt="Maintenance Status">
+</div>
+
 
 ## Project Overview
 This project utilizes **Detectron2**, a high-performance library for object detection and segmentation, to perform **instance segmentation** on cellular images. The goal of the project is to segment four biologically significant classes — cells, mitochondria, canalicular vessels, and alpha granules — in high-resolution microscopic images. Through precise segmentation, this project enables detailed observation of cellular structures and their spatial relationships, which can aid in medical diagnostics, cellular biology research, and pathology studies.
