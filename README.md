@@ -109,6 +109,75 @@ Training was conducted using Detectron2's flexible configuration settings, allow
 3. **Binary Instance Segmentations**:
    - **`instances_test_seg_images`**: Binary masks for each class, enabling detailed analysis and flexible use in downstream research or visualization tasks.
 
+## Model Training and Evaluation
+
+### Training Information
+- **Total Loss**: 0.8905
+- **Classification Loss**: 0.1692
+- **Box Regression Loss**: 0.2786
+- **Mask Loss**: 0.225
+- **RPN Classification Loss**: 0.05147
+- **RPN Localization Loss**: 0.1597
+- **Learning Rate**: 0.00025
+- **Max Memory Usage**: 1824 MB
+- **Iteration**: 1499
+- **Time per Iteration**: 0.4272 seconds
+
+### Dataset Information
+- **Categories**: 
+  - Cells: 28 instances
+  - Mitochondria: 17 instances
+  - Alpha Granules: 31 instances
+  - Canalicular Vessels: 58 instances
+- **Total Instances**: 134
+- **Dataset Format**: COCO
+- **Evaluation Type**: Bounding Box (bbox) and Segmentation (segm)
+
+### Inference Results
+- **Inference Time**: 0.257 seconds per iteration
+
+### Evaluation Metrics
+#### Average Precision (AP) for Bounding Box (bbox)
+- **AP@IoU=0.50:0.95**: 32.34%
+- **AP@IoU=0.50**: 49.40%
+- **AP@IoU=0.75**: 36.10%
+- **AP for Small Area**: 26.89%
+- **AP for Medium Area**: 30.55%
+- **AP for Large Area**: 69.01%
+
+#### Average Precision (AP) for Segmentation (segm)
+- **AP@IoU=0.50:0.95**: 33.59%
+- **AP@IoU=0.50**: 51.40%
+- **AP@IoU=0.75**: 36.28%
+- **AP for Small Area**: 22.94%
+- **AP for Medium Area**: 35.29%
+- **AP for Large Area**: 79.87%
+
+### Per-Category Evaluation (Bounding Box)
+| **Category**        | **AP**    |
+|---------------------|-----------|
+| Cells               | 64.29%    |
+| Mitochondria        | 2.38%     |
+| Alpha Granules      | 32.18%    |
+| Canalicular Vessels | 30.52%    |
+
+### Per-Category Evaluation (Segmentation)
+| **Category**        | **AP**    |
+|---------------------|-----------|
+| Cells               | 72.63%    |
+| Mitochondria        | 1.78%     |
+| Alpha Granules      | 30.61%    |
+| Canalicular Vessels | 29.33%    |
+
+### Model Configuration
+- **Architecture**: Mask R-CNN with ResNet-50 FPN backbone
+- **Batch Size**: 2
+- **Learning Rate**: 0.00025
+- **Maximum Iterations**: 1500
+- **Number of Classes**: 4 (Cells, Alpha Granules, Canalicular Vessels, Mitochondria)
+
+
+
 ## Technology Stack
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Detectron2](https://img.shields.io/badge/Detectron2-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
