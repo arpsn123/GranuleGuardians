@@ -256,6 +256,68 @@ The project leverages a diverse set of tools, frameworks, and libraries that con
       - **Collaboration**: GitHub provides a platform for collaborative work, issue tracking, and review, enhancing project robustness.
       - **Documentation Hosting**: The README.md file and other project documents are hosted on GitHub, providing a centralized resource for project details and usage instructions.
 
+---
 
+
+
+## Prerequisites
+
+Before you begin, make sure you have the following installed:
+
+- **Python 3.8+**
+- **pip** (Python package manager)
+- **git** (for cloning the repository)
+- **CUDA** (for GPU support, if available)
+
+## Clone the Repository
+
+To get started, clone the repository:
+
+```bash
+git clone git@github.com:arpsn123/GranuleGuardians.git
+cd GranuleGuardians
+```
+## Create a Virtual Environment (Optional but Recommended)
+
+```
+python3 -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+```
+
+## Install Dependencies
+Install the required Python dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+## Install Detectron2
+To install Detectron2, run the following command:
+```
+pip install detectron2
+```
+For installation instructions tailored to your platform, visit the official Detectron2 installation guide.
+
+## Dataset Setup
+Ensure your dataset follows the COCO format with the following structure:
+
+```
+dataset/
+  ├── annotations/
+  ├── train/
+  ├── val/
+  └── test/
+  ```
+## Training the Model
+With the dataset and dependencies in place, start training the model:
+
+```
+python train.py --config-file config.yaml
+```
+## Running Inference
+After training is complete, you can run inference on new images:
+```
+python inference.py --input INPUT_PATH --output OUTPUT_PATH
+```
 
 
